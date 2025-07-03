@@ -1,0 +1,72 @@
+body {
+  background-color: #000000;
+  font-family: 'Roboto Slab';
+  color: white;
+  background-image: url(./assets/images/poster2.jpeg);
+  position: relative;
+  min-height: 100vh;
+  background-size: 100%;
+  background-position-x: 0;
+  background-position-y: 0;
+  background-repeat: repeat-y;
+}
+
+html, body, #root {
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/*body:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  z-index: -5;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1) 50%,
+      rgba(0,0,0,0.70) 60%,
+      rgba(0,0,0,0.0) 100%
+    ) no-repeat,
+    rgba(0, 0, 0, 0.50);
+  background-size: 100% 1000px, 100% 100%;
+  background-repeat: no-repeat, repeat-y;
+}*/
+
+body:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  min-height: 100%;
+  height: 100%;
+  z-index: -5;
+  pointer-events: none;
+  background:
+    /* Top gradient */
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,1) 50%,
+      rgba(0,0,0,0.70) 60%,
+      rgba(0,0,0,0.0) 100%
+    ) no-repeat,
+    /* Bottom gradient */
+    linear-gradient(
+      to top,
+      rgba(0,0,0,1) 50%,
+      rgba(0,0,0,0.70) 60%,
+      rgba(0,0,0,0.0) 100%
+    ) no-repeat,
+    /* Overlay */
+    rgba(0, 0, 0, 0.50);
+  background-size: 100% 1000px, 100% 1000px, 100% 100%;
+  background-position: top, bottom, center;
+  background-repeat: no-repeat, no-repeat, repeat-y;
+}

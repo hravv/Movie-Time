@@ -1,0 +1,28 @@
+.nav-bar li {
+  position: relative;
+}
+
+.nav-bar li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.15em;
+  background-color: #2673DE;
+  opacity: 0;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: opacity 300ms, transform 300ms;
+}
+@media (min-width: 1024px) {
+    .nav-bar li::after {
+        bottom: -3px;
+    }
+}
+
+.nav-bar li:hover::after,
+.nav-bar li:focus::after {
+  opacity: 1;
+  transform: scaleX(1);
+}

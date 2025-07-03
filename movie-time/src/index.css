@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-darkbrown: #675F5F;
+  --color-darkerbrown: #4a3f3f;
+  --color-darkorange: #E98A15;
+  --color-neonblue: #2673DE;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('./assets/fonts/RobotoSlab-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/*
+Colours:
+403233 Dark Brown
+E98A15 Orange Brown
+E71D36 Red
+151E3F Dark Blue
+*/
