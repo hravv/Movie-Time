@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/movie-time/',
+  base: '/Movie-Time/',
   plugins: [
     react(),
     tailwindcss(),
